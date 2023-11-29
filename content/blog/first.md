@@ -11,6 +11,7 @@ head:
       content: 'NuxtLabs'
     - name: 'copyright'
       content: '© 2022 NuxtLabs'
+publishedAt: 2022-3-12 23:49:00
 ---
 # First post on our website
 ## Introduction 
