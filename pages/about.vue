@@ -5,7 +5,7 @@
   </div> -->
 </template>
 <script setup>
-// function enableCustomLayout() {
-//   setPageLayout("another");
-// }
+useHead({
+  title: "About",
+});
 </script>
