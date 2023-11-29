@@ -15,16 +15,16 @@ useSeoMeta({
   twitterCard: "summary",
 });
 
-useHead({
-  htmlAttrs: {
-    lang: "pl",
-  },
-  link: [
-    {
-      rel: "icon",
-      type: "image/png",
-      href: "/favicon.ico",
-    },
-  ],
-});
+// useHead({
+//   htmlAttrs: {
+//     lang: "pl",
+//   },
+//   link: [
+//     {
+//       rel: "icon",
+//       type: "image/png",
+//       href: "/favicon.ico",
+//     },
+//   ],
+// });
 </script>
