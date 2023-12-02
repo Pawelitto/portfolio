@@ -5,6 +5,7 @@
         <div>date</div>
         <div>title</div>
       </div>
+
       <ul>
         <li v-for="post in posts" :key="post._path">
           <NuxtLink
@@ -33,17 +34,15 @@ const props = defineProps({
     default: null,
   },
 });
-
 const { data } = await useAsyncData("blog-list", () => {
   const query = queryContent("/blog")
     .where({ _path: { $ne: "/blog" } })
     .only(["_path", "title", "publishedAt"])
-    .sort({ publishedAt: -1 })
-    .find();
-
+    .sort({ publishedAt: -1 });
   if (props.limit) {
-    query.imit(props.limit);
+    query.limit(props.limit);
   }
+  return query.find();
 });
 
 const posts = computed(() => {
